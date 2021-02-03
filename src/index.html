@@ -1,10 +1,19 @@
 <!--
   Vaiheet:
-  1.
-  2.
-  3. Laitetaan yksittäisen sankarin tiedot omaan komponenttiinsa, koska se on arkkitehtuurin kannalta järkevää.
-  Uudesta komponentista tulee listakomponentin lapsikomponentti ja lapsikomponentista...
-  4.
+  1. The Hero Editor: Esitettiin käyttöliittymässä yhden sankarin tiedot, jotka tulivat
+  luokasta tavallisella data-bindingilla. Tehtiin sankarin nimen muokkaus lomakkeelta (input)
+  two-way data-bindingilla.
+
+  2. Display a list: Tehtiin tiedosto josta sankareiden data haettiin sovellukseen, suoraan komponenttiin. Esitettiin sankarilista
+  käyttöliittymässä *ngFor-direktiivillä. Näytettiin lista alla yksittäisen sankarin tiedot. Tutustutaan class-bindingiin eli css-bindingiin.
+
+  3. Create a feature component: Laitetaan yksittäisen sankarin tiedot omaan komponenttiinsa, koska se on arkkitehtuurin kannalta järkevää.
+  Uudesta komponentista tulee listakomponentin lapsikomponentti ja lapsikomponentista viedään sankarin tiedot lapsikomponenttiin.
+  Tapahtuu komponenttien välinen kommunikaatio.
+
+  4. Add Services: Luodaan service, eli luokka joka palvelee kaikkia komponentteja. Haetaan data servicen välityksellä eikä dataa haeta
+  enää suoraan tiedostosta. Haetaan data asynkronisesti observablena. Tehdään toinenkin service, messageservice, joka on loki sovelluksen
+  toiminnasta.
 -->
 
 <!doctype html>
