@@ -18,8 +18,6 @@ export class HeroesComponent implements OnInit {
   //heroes = HEROES; //kaikki sankarit taulukosta
   heroes: Hero[]; //kaikki sankarit palvelulta
 
-  selectedHero: Hero;
-
   //otetaan palvelu käyttöön. heroService on olio joka syntyy tuosta HeroService-luokasta
   //konstruktori-injektiolla. Tämä on "dependency injection" eli riippuvuuden injektio.
   //Ideana on liittää service ja komponentti löysästi, jotta service on helppo myös vaihtaa
@@ -33,11 +31,6 @@ export class HeroesComponent implements OnInit {
   //tämä voisi olla myös konstruktorissa, mutta ilmeisesti tämä parempi tyyli
   ngOnInit(): void {
     this.getHeroes();
-  }
-
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-    this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`);
   }
 
   //getHeroes hakee sankarit palvelulta tähän komponenttiin
