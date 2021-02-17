@@ -40,4 +40,20 @@ export class HeroesComponent implements OnInit {
   getHeroes(): void {
     this.heroService.getHeroes().subscribe((heroes) => (this.heroes = heroes));
   }
+
+  add(name: string): void {
+    name = name.trim(); //ottaa pois tyhjät välilyönnit
+    if (!name) {
+      return;
+    }
+    //tyyppimuunnos Hero-tyyppiseksi "as Hero"
+    this.heroService.addHero({ name } as Hero).subscribe((hero) => {
+      this.heroes.push(hero); //lista päivittyy heti, ei odottele kantaa
+    });
+  }
+
+  delete(hero: Hero): void {
+    this.heroes = this.heroes.filter((h) => h !== hero);
+    this.heroService.deleteHero(hero).subscribe();
+  }
 }
