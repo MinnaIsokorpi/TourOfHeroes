@@ -1,6 +1,6 @@
 # Angular tutorial: Tour Of Heroes
 
-[Linkki tutorialiin:](https://angular.io/tutorial)
+[Linkki tutorialiin: https://angular.io/tutorial](https://angular.io/tutorial)
 
 FrontEnd-kurssin tehtävä
 
