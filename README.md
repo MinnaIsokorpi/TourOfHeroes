@@ -1,4 +1,10 @@
-# AngTourOfHeroes
+# Angular tutorial: Tour Of Heroes
+
+[Linkki tutorialiin:](https://angular.io/tutorial)
+
+FrontEnd-kurssin tehtävä
+
+## Creation
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.6.
 
